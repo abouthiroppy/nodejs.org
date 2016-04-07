@@ -45,11 +45,11 @@
 
                 function showInfo(data, tabletop) {
                   data.reverse()
-                  var html = '<div id="news-list">'
+                    var html = '<div id="news-list"><ul>'
                   data.forEach(function (row) {
-                    html += '<div class="news-row"><a href="'+row.Link+'">'+row.Title+'</a></div>'
+                    html += '<li><div class="news-row"><a href="'+row.Link+'">'+row.Title+'</a></div></li>'
                   })
-                  html += '</div>'
+                  html += '</ul></div>'
                   document.getElementById('news-container').innerHTML = html
                 }
               }
